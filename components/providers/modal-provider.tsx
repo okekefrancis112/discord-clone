@@ -44,8 +44,8 @@ export const ModalProvider = () => {
     <>
       {isOpen && type === "createServer" && <CreateServerModal />}
       {/* Add placeholders for other modals */}
-      {isOpen && type === "editServer" && <div>EditServerModal Placeholder</div>}
-      {isOpen && type === "createChannel" && <div>CreateChannelModal Placeholder</div>}
+      {/* {isOpen && type === "editServer" && <div>EditServerModal Placeholder</div>}
+      {isOpen && type === "createChannel" && <div>CreateChannelModal Placeholder</div>} */}
     </>
   );
 };
