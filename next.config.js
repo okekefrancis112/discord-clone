@@ -26,6 +26,20 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
+    // remotePatterns: [
+    //     {
+    //         protocol: "https",
+    //         hostname: "*.ufs.sh",
+    //         port: "",
+    //         pathname: "/**",
+    //     },
+    //     {
+    //         protocol: "https",
+    //         hostname: "uploadthing.com",
+    //         port: "",
+    //         pathname: "/**",
+    //     },
+    // ]
   },
 };
 
