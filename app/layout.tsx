@@ -1,3 +1,4 @@
+// import "../components/file-upload-styles.css";
 import './globals.css';
 import type { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
@@ -34,8 +35,8 @@ export default function RootLayout({
             enableSystem
             storageKey='discord-theme'
           >
-            {children}
             <ModalProvider />
+            {children}
           </ThemeProvider>
         </body>
       </html>

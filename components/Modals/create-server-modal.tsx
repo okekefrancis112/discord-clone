@@ -182,9 +182,9 @@ export const CreateServerModal = () => {
     onClose();
   };
 
-  if (!isModalOpen) {
-    return null;
-  }
+  // if (!isModalOpen) {
+  //   return null;
+  // }
 
   return (
     <Dialog open={isModalOpen} onOpenChange={handleClose}>
@@ -205,11 +205,11 @@ export const CreateServerModal = () => {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <FileUpload
+                        {/* <FileUpload
                             endpoint="serverImage"
                             value={field.value}
                             onChange={field.onChange}
-                        />
+                        /> */}
                       </FormControl>
                       <FormMessage />
                     </FormItem>

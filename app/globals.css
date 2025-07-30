@@ -1,8 +1,9 @@
-
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
+/* @import "@uploadthing/react/styles.css"; */
 
 html,
 body,
