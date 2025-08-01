@@ -1,6 +1,9 @@
 import { cn } from "@/lib/utils";
--import { Avatar, AvatarImage } from "./ui/avatar";
-+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+// components/user-avartar.tsx
+
+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+
+// …rest of file unchanged…
 
 interface UserAvatarProps {
     src?: string;
