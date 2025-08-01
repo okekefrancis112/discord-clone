@@ -22,9 +22,12 @@ const InviteCodePage = async ({
         return redirect("/");
     }
 
+    // Await params before using it
+    const { inviteCode } = await params;
+
     const existingServer =  await db.server.findFirst({
         where: {
-            inviteCode: params.inviteCode,
+            inviteCode: inviteCode,
             members: {
                 some: {
                     profileId: profile.id
