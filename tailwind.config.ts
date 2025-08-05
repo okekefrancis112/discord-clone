@@ -70,7 +70,6 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  // Remove theme customizations since they're now handled in CSS
 }
 
 export default withUt(config);
