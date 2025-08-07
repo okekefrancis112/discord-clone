@@ -23,6 +23,9 @@ export const FileUpload = ({
     onChange(""); // Clear the value
   };
 
+  console.log("value>>>>>>>>>>>>>>>>>>>>>>>>>: ", value)
+  console.log("fileType>>>>>>>>>>>>>>>>>>>>>>>>>: ", fileType)
+
   if (value && fileType !== "pdf") {
     return (
       <div className="relative h-20 w-20">
@@ -49,7 +52,8 @@ export const FileUpload = ({
       endpoint={endpoint}
       onClientUploadComplete={(res) => {
         // onChange(res?.[0]?.url || res?.[0]?.ufsUrl || "");
-        onChange(res?.[0]?.ufsUrl);
+        // onChange(res?.[0]?.ufsUrl);
+        console.log("res?.[0]?.ufsUrl>>>>>>>>>>>>>>>>>>", res?.[0]?.ufsUrl);
       }}
       onUploadError={(error: Error) => {
         console.error("Upload error:", error);
