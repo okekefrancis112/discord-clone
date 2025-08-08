@@ -19,7 +19,7 @@ export default async function handler(
         if (!profile) {
             return res.status(401).json({ error: "Unauthorized" });
         }
-
+  
         if (!serverId) {
             return res.status(400).json({ error: "Server ID missing" });
         }
