@@ -42,6 +42,7 @@ export const useChatQuery = ({
         getNextPageParam: (lastPage) => lastPage?.nextCursor,
         initialPageParam: undefined, // Add this to fix the error
         refetchInterval: isConnected ? false : 1000
+        // refetchInterval: 1000
     });
 
     return {

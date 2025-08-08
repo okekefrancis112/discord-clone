@@ -72,7 +72,14 @@ export default async function handler(
             include: {
                 member: {
                     include: {
-                        profile: true,
+                        // profile: true,
+                        profile: {
+                            select: {
+                                id: true,
+                                name: true,
+                                imageUrl: true,
+                            },
+                        },
                     },
                 },
             },
@@ -104,7 +111,14 @@ export default async function handler(
                 include: {
                     member: {
                         include: {
-                            profile: true,
+                            // profile: true,
+                            profile: {
+                                select: {
+                                    id: true,
+                                    name: true,
+                                    imageUrl: true,
+                                },
+                            },
                         }
                     }
                 }
@@ -125,7 +139,14 @@ export default async function handler(
                 include: {
                     member: {
                         include: {
-                            profile: true,
+                            // profile: true,
+                            profile: {
+                                select: {
+                                    id: true,
+                                    name: true,
+                                    imageUrl: true,
+                                },
+                            },
                         }
                     }
                 }
