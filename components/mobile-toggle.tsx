@@ -7,7 +7,6 @@ import { ServerSidebar } from "@/components/server/server-sidebar"
 export const MobileToggle = ({
     serverId
 }: { serverId: string }) => {
-    console.log("serverId>>>>>>>>>>>>>", serverId);
     return (
         // ! TODO: TEST THIS MOBILE TOGGLE VERY WELL TO SEE IF THE HAMBUGER MENU WORKS PROPERLY
         <Sheet>
@@ -27,7 +26,6 @@ export const MobileToggle = ({
 }
 
 // export const MobileToggle = ({ serverId }: { serverId: string }) => {
-//     console.log("serverId>>>>>>>>>>>>>", serverId);
 //     return (
 //         <Sheet>
 //             <SheetTrigger asChild>

@@ -4,21 +4,20 @@ import { RedirectToSignIn } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
 interface ServerIdPageProps {
-    params: {
+    params: Promise<{
         serverId: string;
-    }
+    }>;
 };
 
 const ServerIdPage = async ({
     params
 }: ServerIdPageProps) => {
+    // Await params FIRST
+    const { serverId } = await params;
     const profile = await currentProfile();
 
-    // Await params before using it
-    const { serverId } = await params;
-
     if(!profile) {
-        return RedirectToSignIn({});
+        return <RedirectToSignIn />;
     }
 
     const server = await db.server.findUnique({

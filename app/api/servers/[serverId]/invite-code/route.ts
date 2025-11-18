@@ -4,7 +4,8 @@ import { db } from "@/lib/db";
 import { NextResponse } from "next/server";
 
 export async function PATCH(
-    { params }: { params: { serverId: string } }
+    req: Request,
+    { params }: { params: Promise<{ serverId: string }> }
 ) {
     try {
         const profile = await currentProfile();
